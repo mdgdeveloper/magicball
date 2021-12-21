@@ -1,0 +1,86 @@
+.m-main{
+    padding-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.m-magicball-img{
+    width: 800px;
+    height: 800px;
+    background: url('/img/magicball.png') no-repeat;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.m-magicball-text{
+    width: 50%;
+
+}
+
+.m-result{
+    color: white;
+    font-weight: 600;
+    opacity: 0;
+    text-align: center;
+    font-size: 6.7vw;
+    -webkit-user-select: none; /* Safari */        
+-moz-user-select: none; /* Firefox */
+-ms-user-select: none; /* IE10+/Edge */
+user-select: none; /* Standard */
+}
+
+
+.m-result-visible{
+    transition: all ease-in 1s;
+    opacity: 100%; 
+     
+}
+
+.m-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    width: 100%;
+
+}
+
+.m-button-style{
+    font-family: Tahoma, Verdana, 'sans-serif';
+    width: 80%;
+    font-size: 15px;
+    border:none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #F21E32;
+    color: white;
+    border: 2px solid #CD1929;
+    font-weight: 600;
+}
+
+
+
+@media screen and (max-width: 480px) {
+    .m-magicball-img{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+
+@media screen and (min-width: 600px) {
+    .m-magicball-img{
+        width: 600px;
+        height: 600px;
+    }
+
+    .m-result{
+        font-size: 80px;
+    }
+
+}
